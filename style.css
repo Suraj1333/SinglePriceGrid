@@ -1,233 +1,198 @@
-*{
-    font-family: 'Karla', sans-serif;
-    background-color: hsl(218, 100%, 88%);
+* {
+    margin: auto;
+    margin-top: 2%;
+    
+    
+    
+    font-family: 'Big Shoulders Display', cursive;
+
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-container {
-    border-radius: 15px;
-    margin: auto;
-    position: relative;
-    top: 125px;
-    box-shadow: 5px 5px 15px rgb(185, 185, 185, 0.9);
+main {
     display: grid;
-    height: 65vh;
+    height: 75vh;
     width: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "top top"
-                          "left right";
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: "sedan suvs luxury";
+    place-content: center;
 }
 
-.top {
-    background-color: rgb(255, 255, 255);
-    grid-area: top;
-    border-radius: 15px 15px 0px 0px;
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    grid-area: sedan;
+    padding: 45px;
+    border-radius: 7px 0px 0px 7px;
 }
 
-.left {
-    background-color: hsl(179, 62%, 43%);
-    grid-area: left;
-    border-radius: 0px 0px 0px 15px;
+.SUV {
+    background-color: hsl(184, 100%, 22%);
+    grid-area: suvs;
+    padding: 45px;
 }
 
-
-.right  {
-    background-color: hsl(179, 79%, 46%);
-    grid-area: right;
-    border-radius: 0px 0px 15px 0px;
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    grid-area: luxury;
+    padding: 45px;
+    border-radius: 0px 7px 7px 0px;
 }
 
-.top h1 {
-    height: 0px;
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    color: hsl(179, 62%, 43%);
+h1 {
     font-weight: 700;
-}
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 5px;
+    padding-top: 45px;
+    color: hsl(0, 0%, 95%);
+    }
 
-.top h3 {
-    height: 0px;
-    position: absolute;
-    top: 75px;
-    left: 25px;
-    color: hsl(71, 73%, 54%);
-}
-
-.text1 {
-    height: 0px;
-    position: absolute;
-    top: 125px;
-    left: 25px;
-    font-size: 18px;
-    font-weight: 500;
-    color: hsl(0, 0%, 49%);
-}
-
-.left h2 {
-    height: 0px;
-    position: relative;
-    top: 15px;
-    left: 25px;
-    font-size: 20px;
-    color: #fafafa;
-    
-}
-
-.cost {
-    height: 0px;
-    position: relative;
-    left: 30px;
-    top: 50px;
-    font-weight: 700;
-    font-size: 30px;
-    color: #fafafa;
-}
-
-.text2 {
-    height: 0px;
-    position: relative;
-    top: 60px;
-    left: 100px;
-    color: rgb(255, 255, 255,0.5);
-}
-
-.text3 {
-    height: 0px;
-    position: relative;
-    top: 85px;
-    left: 30px;
-    color: #fafafa;
-    font-weight: 500;
-}
-
-button {
-    position: relative;
-    top: 110px;
-    left: 65px;
-    width: 175px;
-    height: 45px;
-    background-color: hsl(71, 73%, 54%);
-    color: white;
-    font-weight: 700;
-    border: none;
-    font-size: 20x;
-    box-shadow: 5px 5px 15px rgb(66, 66, 66,0.7);
-    border-radius: 5px;
-}
-
-.h3 {
-    height: 0px;
-    position: relative;
-    top: 5px;
-    left: 35px;
-    color: #fafafa;
-}
-
-.text4 {
-    height: 0px;
-    position: relative;
-    top: 35px;
-    left: 35px;
-    color: rgba(255, 255, 255, 0.8);
+.sedan-txt {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 5px;
+    word-spacing: 5px;
+    padding-top: 15%;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 225px;
     font-size: 16px;
-    font-weight: 500;
+    padding-bottom: 45%;
+    
+}    
+
+.sedan-img {
+    padding-top: 25px;
 }
 
-footer {
-    margin: auto;
-    position: relative;
-    top: 200px;
-    color: black;
-    font-weight: 700;
-    
+.sedan-button {
+    font-size: 14px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 15px;
+    min-width: 150px;
+    min-height: 50px;
+    border-style: solid;
+    background-color: hsl(31, 77%, 52%);
+    border-color: hsla(0, 0%, 100%, 0.75);
+    border-width: 3px;
+    color: hsla(0, 0%, 100%, 0.75);   
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+.suv-img {
+    padding-top: 25px;
+}
+.suv-button {
+    font-size: 14px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 15px;
+    min-width: 150px;
+    min-height: 50px;
+    border-style: solid;
+    background-color:  hsl(184, 100%, 22%);
+    border-color: hsla(0, 0%, 100%, 0.75);
+    border-width: 3px;
+    color: hsla(0, 0%, 100%, 0.75);   
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+
+}
+
+.suv-txt {
+    word-spacing: 5px;    
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 5px;
+    padding-top: 15%;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 225px;
+    font-size: 16px;
+    padding-bottom: 45%;
     
 }
 
-footer a {
+.luxury-img {
+    padding-top: 25px;
+}
+
+.luxury-txt {
+    word-spacing: 4px;    
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 5px;
+    padding-top: 15%;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 225px;
+    font-size: 16px;
+    padding-bottom: 45%;
+
+}
+
+.luxury-button {
+    font-size: 14px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 15px;
+    min-width: 150px;
+    min-height: 50px;
+    border-style: solid;
+    background-color:  hsl(179, 100%, 13%);
+    border-color: hsla(0, 0%, 100%, 0.75);
+    border-width: 3px;
+    color: hsla(0, 0%, 100%, 0.75);   
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+
+}
+
+.attribution a{
+    text-align: center;
+    color: hsl(184, 100%, 22%);
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-
+    font-weight: 700;
+    font-size: 14px;
 }
 
-@media screen and (max-width:768px){
-   container {
-       position: relative;
-       top: 50px;
-       display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: 0.7fr 0.7fr 0.7fr;
-       height: 125vh;
-       width: 55vh;
-       grid-template-areas: "top"
-                            "middle"
-                            "bottom";
-
-   }  
-
-   
-
-   .top {
-       background-color: white;
-       grid-area: top;
-   }
-
-   .left {
-       background-color: hsl(179, 62%, 43%);
-       grid-area: middle;
-       border-radius: 0px;
-
-   }
-
-   .right {
-       background-color: hsl(179, 79%, 46%);
-       grid-area: bottom;
-       border-radius: 0px 0px 15px 15px;
-
-   }
-
-   .top h1 {
-       font-size: 20px;
-   }
-
-   .top h3 {
-       font-size: 18px;
-       position: relative;
-       top: 55px;
-   }
-
-   .text1 {
-       font-size: 18px;
-       width: 375px;
-       top: 100px;
-       position: relative;
-       left: 25px;
-   }
-   button {
-       position: relative;
-       top: 150px;
-       left: 100px;
-   }
-
-   .h3 {
-       font-size: 25px;
-   }
-
-   .text4 {
-       font-size: 20px;
-       color: whitesmoke;
-   }
-
-   footer {
-       position: relative;
-       top: 150px;
-      
-  }
 
 
-   }
+@media screen and (max-width:1000px){
+    main {
+        display: grid;
+        width: 75vh;
+    }
+}
+
+@media screen and (max-width:900px){
+    main {
+        display: grid;
+        width: 30vh;
+         height: 250vh;    
+         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:   "sedan" "suvs" "luxury";
+        place-content: center;
+        
+    }
+
+    .sedan {
+        grid-area: sedan;
+        background-color: hsl(31, 77%, 52%);
+        
+        
+        
+    }
 
 
+    .SUV {
+        grid-area: suvs;
+        background-color: hsl(184, 100%, 22%);
+        
+    }
+
+    .luxury {
+        grid-area: luxury;
+        background-color: hsl(179, 100%, 13%);
+    }
+
+    .attribution {
+        align-items: center;
+    }
+
+
+}
 
 
